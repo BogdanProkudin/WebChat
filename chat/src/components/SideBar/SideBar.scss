@@ -1,0 +1,219 @@
+.Sidebar-bg {
+  position: absolute;
+  background-color: rgb(239, 255, 255);
+  height: 99.8vh;
+  transition: width 2s ease; /* Добавляем CSS-транзицию для плавного изменения ширины */
+  width: 100%;
+  max-width: 300px;
+}
+
+.profileImage {
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+}
+.over {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4941176471);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* SideBar.css */
+.sidebar {
+  width: 0;
+  height: 99.6vh;
+  background-color: #f7fafc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+/* Добавляем стили для открытой панели */
+.sidebar.open {
+  max-width: 450px;
+
+  width: 100%;
+}
+.UserInfoModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 250px;
+  width: 450px;
+  background-color: rgb(241, 244, 244);
+}
+.UserInfoModalItems {
+  align-items: center;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+.UserInfoModalItem {
+  color: rgb(49, 40, 40);
+  font-size: 22px;
+}
+.SideBar-top {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 221, 255);
+  align-items: center;
+}
+.SideBarInput {
+  margin-left: 20px;
+  height: 2.2rem;
+  width: 280px;
+  font-size: 1rem;
+  padding-left: 20px;
+  border: 2px solid rgb(193, 193, 219);
+  transition-duration: 20ms;
+  outline: none;
+  border-radius: 0.375rem;
+  &:focus {
+    border-color: blue;
+  }
+}
+@media (max-width: 440px) {
+  .SideBarInput {
+    width: 85%;
+  }
+}
+@media (max-width: 368px) {
+  .SideBarInput {
+    width: 70%;
+  }
+}
+.SideBarContainer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+  width: 100%; /* Это позволит элементу занимать всю доступную ширину */
+}
+.SideBar-top-Items {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+.LogOutBtn {
+  height: 2.1rem;
+  min-width: 2.1rem;
+  background-color: #edf2f7;
+  border-radius: 9999px;
+  border: none;
+  margin-top: 5px;
+
+  &:hover {
+    background-color: #dce2eb;
+  }
+}
+.logOutSvg {
+  padding-top: 4px;
+}
+
+.newChatBtn {
+  background: #edfae7;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 2.5rem;
+  width: 17rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  min-width: 2.5rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #d5eeff;
+  }
+}
+
+.FindUserBtn {
+  margin-top: -17px;
+  height: 2.4rem;
+  border-radius: 0.375rem;
+  background-color: #38b2ac;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  color: #ffffff;
+  width: 6rem;
+  margin-right: 20px;
+}
+
+.Parents {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+}
+.addUser {
+  top: 108px;
+  width: 33px;
+  left: 70px;
+  position: absolute;
+}
+
+.newChatBtnParent {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+}
+.userImage {
+  margin-top: 1px;
+  align-items: center;
+  border-radius: 100px;
+  margin-left: 3px;
+  height: 50px;
+}
+
+.bg-user {
+  display: flex;
+  height: 63px;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.profileName {
+  font-size: 20px;
+  margin-top: 8px;
+  color: #020202;
+  font-weight: 600;
+}
+.userNick {
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.test {
+  margin-top: 24px;
+}
+.NIGGERS {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 270px;
+  z-index: 999;
+  background-color: rgb(218, 16, 16);
+  border-radius: 10px;
+  height: 55px; /* Высота полосы таймера */
+}

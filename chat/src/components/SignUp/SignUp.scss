@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.bg-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  overflow: hidden;
+  width: auto;
+  background-color: #dbeef5;
+}
+
+.Welcome-text {
+  color: #38b2ac;
+  font-weight: 700;
+  margin-top: 65px;
+  font-size: 2.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.Welcome-avatar {
+  position: absolute;
+  left: 200px;
+  top: 35px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: #319795;
+  border-radius: 100px;
+}
+
+.window {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.92);
+  height: auto;
+  max-width: 450px;
+}
+
+.Signrow {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.email-input {
+  height: 37px;
+  border: 1px solid grey;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding-left: 40px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: none;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 374px;
+  &:focus {
+    border-color: blue;
+  }
+}
+
+.btnEye {
+  position: relative;
+  height: 1.75rem;
+  left: 390px;
+  bottom: 35px;
+  background: #edf2f7;
+  border: none;
+  cursor: pointer;
+  min-width: 2rem;
+  border-radius: 0.375rem;
+  transition: all 0.6s ease;
+  &:hover {
+    background-color: #d5dbe0;
+  }
+}
+.EyeOpen {
+  margin-top: 3px;
+  align-items: center;
+  width: 14px;
+}
+
+.SignBtn {
+  margin-left: 16px;
+  width: 415px;
+  height: 2.5rem;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 600;
+  color: white;
+  background-color: #319795;
+  &:hover {
+    background-color: #2e8b8a;
+  }
+}
+.SignUpBackError {
+  position: relative;
+  font-size: 1rem;
+  color: #eb0400;
+  left: 21px;
+  bottom: 10px;
+  font-weight: 500;
+}
+.SignUpText {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin-top: 40px;
+  font-size: 17px;
+
+  position: relative;
+  left: 144px;
+  top: 30px;
+}
+.lock-Image {
+  position: absolute;
+  height: 1.5rem;
+  top: 263px;
+  left: 24px;
+}
+.SignWelcome-avatar {
+  position: absolute;
+  left: 200px;
+  top: 35px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: #319795;
+  border-radius: 100px;
+}
+
+.emailPhoto {
+  position: relative;
+  top: 51px;
+  left: 24px;
+  height: 1.5rem;
+}
+.SignUpLink {
+  text-decoration: none;
+  color: #319795;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 510px) {
+  .window {
+    max-width: 350px;
+  }
+  .email-input {
+    width: 257px;
+  }
+  .SignBtn {
+    width: 315px;
+  }
+  .SignWelcome-avatar {
+    left: 150px;
+  }
+  .btnEye {
+    left: 285px;
+  }
+  .SignUpText {
+    position: relative;
+    left: 93px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  .window {
+    max-width: 250px;
+  }
+  .email-input {
+    width: 164px;
+  }
+  .SignBtn {
+    margin-top: -5px;
+    width: 210px;
+  }
+  .SignWelcome-avatar {
+    left: 102px;
+  }
+  .btnEye {
+    left: 194px;
+  }
+  .SignUpText {
+    position: relative;
+    left: 26px;
+    top: 25px;
+  }
+}

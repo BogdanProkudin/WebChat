@@ -1,0 +1,229 @@
+.chat {
+  max-height: 100vh;
+
+  overflow: hidden;
+  min-width: 300px;
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  height: 250px;
+
+  width: 300px;
+  margin-top: 250px;
+  margin-left: 500px;
+}
+.ChatHeaderFlex {
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+.RemoveFriendImage {
+  height: 30px;
+  width: 30px;
+  margin-right: 50px;
+  margin-top: 12px;
+}
+.RemoveFriendButton {
+  cursor: pointer;
+  min-width: 3rem;
+  background: none;
+  border: none;
+}
+.iconWrapper {
+  margin-left: 40px;
+}
+
+.ChatUserNickname {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-style: oblique;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.ChatInputParent {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 98%;
+  margin-left: 7px;
+}
+.ChatInput {
+  font-size: 1rem;
+  width: 100%;
+  min-height: 2.5rem;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  max-height: 7vh;
+  font-family: sans-serif;
+  resize: none; /* Отключить возможность изменения размера вручную */
+  overflow-y: hidden; /* Показать вертикальную полосу прокрутки, если текст превышает размер текстовой области */
+
+  background-color: rgb(207 202 202);
+  border-radius: 0.375rem;
+}
+.ChatInput::placeholder {
+  font-family: sans-serif; /* Замените "Новый_шрифт" на имя вашего шрифта */
+  text-align: left;
+  padding-top: 10px;
+}
+
+.ChatWindowMain::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ChatWindowMain::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.arrowBack {
+  position: relative;
+  width: 25px;
+  top: 2px;
+  height: 25px;
+  right: 10px;
+}
+.ChatWindowMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Выравнивание элементов слева */
+  max-height: 78vh;
+  min-height: 77vh;
+  word-wrap: break-word;
+  padding: 0px;
+
+  width: 100%;
+  overflow-y: auto;
+}
+.currentUserMessage {
+  border-radius: 8px;
+  margin-top: 20px; /* Убираем отступы между сообщениями */
+  max-width: 70%;
+  margin-left: 12px;
+  list-style: none;
+  background-color: #f1f1f1;
+  height: auto;
+}
+
+.otherUserMessage {
+  background-color: #cce6ff;
+  align-self: flex-end;
+  margin-top: 20px;
+  list-style: none;
+  border-radius: 8px;
+  margin-right: 12px;
+
+  max-width: 70%;
+}
+
+.LineBar {
+  width: 100px;
+}
+
+.message {
+  padding: 0px;
+  height: auto;
+  margin: 7px;
+  color: #000000;
+  font-size: 16px; /* Размер шрифта */
+  line-height: 1.4; /* Межстрочное расстояние */
+  max-width: 550px;
+  word-wrap: break-word; /* Перенос текста */
+}
+.sendMessageButton {
+  z-index: 100;
+  border-radius: 0.375rem;
+  height: 2.7rem;
+  background-color: #3390ec;
+  left: 1175px;
+  top: 75px;
+  min-width: 2.5rem;
+}
+
+.sendImg {
+  height: 16px;
+  width: 16px;
+  color: white;
+}
+textarea::-webkit-scrollbar {
+  width: 12px; /* Ширина полосы прокрутки */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет полосы прокрутки */
+  border-radius: 6px; /* Скругление углов полосы прокрутки */
+}
+
+/* Опционально, стилизация при наведении на полосу прокрутки */
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Стилизация горизонтальной полосы прокрутки (если она есть) */
+textarea::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет фона трека */
+}
+
+/* Опционально, стилизация кнопок прокрутки (стрелки) */
+textarea::-webkit-scrollbar-button {
+  display: none; /* Скрыть кнопки прокрутки */
+}
+.ChatDeletedModal {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 270px;
+  color: rgb(199, 48, 48);
+  z-index: 999;
+
+  border-radius: 10px;
+  height: 55px; /* Высота полосы таймера */
+}
+@media (max-height: 600px) {
+  /* Стили для экранов высотой до 600px */
+  .ChatWindowMain {
+    min-height: 39px;
+  }
+}
+
+@media (min-height: 601px) and (max-height: 1025px) {
+  .ChatWindowMain {
+    height: 500px;
+    min-height: 39px;
+  }
+}
+@media (min-height: 1100px) and (max-height: 1900px) {
+  /* Стили для экранов высотой до 600px */
+  .ChatWindowMain {
+    height: 480px;
+    min-height: 50px;
+  }
+}
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 500px) {
+  .ChatWindowMain {
+    height: 500px;
+  }
+  .message {
+    max-width: 250px;
+  }
+}
+@media (max-width: 290px) {
+  .ChatInputParent {
+    width: 90%;
+  }
+  .chat {
+    height: 1008px;
+  }
+  .message {
+    max-width: 250px;
+  }
+}

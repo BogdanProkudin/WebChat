@@ -1,0 +1,463 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Welcome-text {
+  color: #38b2ac;
+  font-weight: 700;
+  margin-top: 65px;
+  font-size: 2.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+.setImageBtn {
+  height: 160px;
+  width: 160px;
+  border-radius: 100px;
+
+  &:hover {
+  }
+}
+.avatar-image {
+  width: 140px;
+  height: 140px;
+
+  border-radius: 100px;
+  &:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+}
+
+.avatar-image-empty {
+  width: 100px;
+  height: 100px;
+}
+.Welcome-avatar {
+  position: absolute;
+  left: 200px;
+  top: 35px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: #319795;
+  border-radius: 100px;
+}
+
+.Register-window {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.92);
+  height: 430px;
+  width: 470px;
+  max-width: 460px;
+}
+
+.row {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrongEmail {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 211px;
+  left: 35px;
+  color: #eb0400;
+  font-weight: 500;
+}
+.wrongUserName {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 269px;
+  left: 35px;
+  color: #eb0400;
+  font-weight: 500;
+}
+.BackError {
+  position: relative;
+  font-size: 1rem;
+
+  color: #eb0400;
+  font-weight: 500;
+}
+.wrongPassword {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 325px;
+  left: 35px;
+  color: #eb0400;
+  font-weight: 500;
+}
+.email-input {
+  height: 37px;
+  border: 1px solid grey;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding-left: 40px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: none;
+
+  margin-top: 15px;
+  width: 360px;
+  padding-right: 10px;
+  &:focus {
+    border-color: blue;
+  }
+}
+.Registr-email-input {
+  height: 37px;
+  border: 1px solid grey;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding-left: 40px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: none;
+  margin-right: 4px;
+  margin-top: 15px;
+  width: 360px;
+  padding-right: 10px;
+  &:focus {
+    border-color: blue;
+  }
+}
+.password-input {
+  height: 38px;
+  border: 1px solid grey;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  padding-left: 40px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: none;
+  margin-left: 7px;
+  margin-top: 15px;
+  width: 324px;
+  padding-right: 50px;
+  &:focus {
+    border-color: blue;
+  }
+}
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  width: auto;
+  background-color: #dbeef5;
+}
+.btnEyes {
+  height: 1.75rem;
+  position: relative;
+  background: #edf2f7;
+  border: none;
+  left: 410px;
+  bottom: 34px;
+  cursor: pointer;
+  min-width: 2rem;
+  border-radius: 0.375rem;
+  transition: all 0.6s ease;
+  &:hover {
+    background-color: #d5dbe0;
+  }
+}
+.EyeOpen {
+  margin-top: 3px;
+  align-items: center;
+  width: 14px;
+}
+
+.RegisterBtn {
+  width: 420px;
+  height: 2.5rem;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 600;
+  color: white;
+  background-color: #319795;
+  &:hover {
+    background-color: #2e8b8a;
+  }
+}
+.registerText {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin-top: 49px;
+  font-size: 17px;
+}
+.SignUpLink {
+  text-decoration: none;
+  color: #319795;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.EmailRegisterPhoto {
+  position: relative;
+  top: 7px;
+  right: -30px;
+  height: 1.5rem;
+}
+
+.Registerlock-Image {
+  position: relative;
+  height: 1.5rem;
+  top: 5px;
+  left: 38px;
+}
+.userPhoto {
+  position: relative;
+  top: 7px;
+  left: 29px;
+  height: 1.5rem;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.SubmitBtn {
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  top: 22px;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  width: 88px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #8c82fc;
+  background: #fff;
+  color: #8c82fc;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.SubmitBtn:hover {
+  background: #8c82fc;
+  color: #fff;
+}
+
+.SubmitBtn span {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.35s;
+}
+.continiue-btn {
+  position: relative;
+  top: 10px;
+  left: 150px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid green;
+  color: green;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color: white;
+    background: green;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+}
+
+.deleteImg-btn {
+  position: relative;
+  top: 50.5px;
+  right: 160px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid rgb(254, 0, 0);
+  color: red;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color: white;
+    background: red;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+}
+.continiueDefault-btn {
+  position: relative;
+  top: 10px;
+  left: 150px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid green;
+  color: green;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color: white;
+    background: green;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+}
+
+.deleteImg-btn {
+  position: relative;
+  top: 50.5px;
+  right: 160px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid rgb(254, 0, 0);
+  color: red;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color: white;
+    background: red;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 510px) {
+  .Register-window {
+    max-width: 350px;
+  }
+  .Registr-email-input {
+    width: 257px;
+  }
+  .email-input {
+    width: 257px;
+  }
+  .password-input {
+    margin-left: 2px;
+    width: 225px;
+  }
+  .RegisterBtn {
+    width: 320px;
+  }
+  .Welcome-avatar {
+    left: 150px;
+  }
+  .btnEyes {
+    left: 306px;
+  }
+
+  .Registerlock-Image {
+    left: 34px;
+  }
+  .continiue-btn {
+    left: 100px;
+  }
+  .continiueDefault-btn {
+    left: 100px;
+  }
+  .deleteImg-btn {
+    right: 105px;
+  }
+}
+
+@media (max-width: 390px) {
+  .Registr-email-input {
+    width: 164px;
+  }
+  .email-input {
+    width: 164px;
+  }
+  .password-input {
+    width: 125px;
+  }
+  .Register-window {
+    max-width: 250px;
+  }
+  .RegisterBtn {
+    width: 220px;
+  }
+
+  .Welcome-avatar {
+    left: 99px;
+  }
+
+  .btnEyes {
+    left: 207px;
+  }
+
+  .Registerlock-Image {
+    left: 34px;
+  }
+  .continiue-btn {
+    left: 70px;
+    width: 90px;
+  }
+  .deleteImg-btn {
+    width: 103px;
+    top: 42.5px;
+    right: 70px;
+  }
+
+  .continiueDefault-btn {
+    bottom: 20px;
+    left: 50px;
+  }
+  .setImageBtn {
+    height: 140px;
+    width: 140px;
+  }
+  .avatar-image {
+    height: 120px;
+    width: 120px;
+  }
+}
